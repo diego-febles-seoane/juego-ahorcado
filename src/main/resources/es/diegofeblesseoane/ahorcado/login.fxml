@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400" prefWidth="300" stylesheets="@CSS/style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="es.diegofeblesseoane.ahorcado.frontend.controller.loginController">
+      <Label layoutX="26.0" layoutY="119.0" text="Contraseña:" />
+      <PasswordField fx:id="passwordField" layoutX="117.0" layoutY="115.0" promptText="Contraseña" />
+      <Label layoutX="37.0" layoutY="74.0" text="Usuario:" />
+      <TextField fx:id="usernameField" layoutX="117.0" layoutY="70.0" promptText="Nombre de usuario" />
+
+           <!-- Botones principales -->
+     <Button fx:id="btnAceptar" layoutX="117.0" layoutY="227.0" maxWidth="200" onAction="#handleAceptar" text="Aceptar" />
+     <Button fx:id="btnRegistrar" layoutX="114.0" layoutY="267.0" maxWidth="200" onAction="#handleRegistrar" text="Registrar" />
+     <Button fx:id="btnListarUsuarios" layoutX="96.0" layoutY="345.0" maxWidth="200" onAction="#handleListarUsuarios" text="Listar Usuarios" />
+     <Button fx:id="btnRecuperar" layoutX="73.0" layoutY="305.0" maxWidth="200" onAction="#handleRecuperar" text="Recuperar Contraseña" />
+</AnchorPane>
